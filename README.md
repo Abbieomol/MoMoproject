@@ -35,10 +35,10 @@ For Week 1, the focus is on:
 
 ## Architecture Diagram
 
-![Click here to view Architecture Diagram](link)
+![Click here to view Architecture Diagram](./images/placeholder.png)
 
 ---
 
 ## Scrum Board
 
-[Click here to view Scrum Board](link)
+[Click here to view Scrum Board](./images/placeholder.png)
