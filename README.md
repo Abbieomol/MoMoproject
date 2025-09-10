@@ -35,7 +35,7 @@ For Week 1, the focus is on:
 
 ## Architecture Diagram
 
-![Click here to view Architecture Diagram](./images/placeholder.png)
+https://drive.google.com/file/d/1cvtZDU9UQzNxUoj7_jDohMXb2KmhXQNw/view?usp=sharing
 
 ---
 
