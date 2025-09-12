@@ -41,4 +41,4 @@ https://drive.google.com/file/d/1cvtZDU9UQzNxUoj7_jDohMXb2KmhXQNw/view?usp=shari
 
 ## Scrum Board
 
-[Click here to view Scrum Board]([./images/placeholder.png](https://trello.com/b/6Fa0j91W/my-trello-board))
+https://trello.com/b/6Fa0j91W/my-trello-board
