@@ -1,0 +1,9 @@
+The Entity Relationship Diagram for the MoMo SMS processing system was designed to reflect how mobile money transactions happen in the real world while also supporting data cleaning, categorization, and auditing.
+At the center of the model is the Transaction entity, which stores details such as the amount, currency, timestamp, and the raw SMS message. Each transaction is linked to a Transaction_category, which helps classify whether the transaction is a payment, withdrawal, or transfer.
+Using a separate category table avoids repeating the same values and makes it easier to expand or adjust categories in the future.
+The User entity captures customer details such as phone number, name, and identification number. Because transactions always involve more than one party such as a sender, a receiver, or sometimes a merchant, the design includes a junction table called Transaction_participants.
+This table resolves the many-to-many relationship between users and transactions by recording each participant’s role. This ensures flexibility and accuracy since the same user can appear in multiple transactions with different roles.
+The System_logs entity was added to provide traceability. Logs can capture information about parsing errors, processing actions, or general system messages. They are optionally linked to users or transactions, which makes it possible to trace issues back to specific records without forcing every log to be tied to a user.
+
+
+This design makes the system robust, scalable, and realistic for real-world mobile money data processing
