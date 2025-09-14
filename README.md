@@ -42,3 +42,7 @@ https://drive.google.com/file/d/1cvtZDU9UQzNxUoj7_jDohMXb2KmhXQNw/view?usp=shari
 ## Scrum Board
 
 https://trello.com/b/6Fa0j91W/my-trello-board
+
+## ERD Documentation
+
+https://docs.google.com/document/d/1epBmEhosZ_T7uk3mHBZHPyuHgbD6Xorco5bSBJiP82w/edit?usp=sharing
