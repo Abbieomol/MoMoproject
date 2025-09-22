@@ -9,7 +9,7 @@
 | Rowan Hongo     | [r.hongo@alustudent.com](mailto:r.hongo@alustudent.com)  |
 | Leila Omol      | [l.omol@alustudent.com](mailto:l.omol@alustudent.com)   |
 | Erick Kanja     | [e.kanja@alustudent.com](mailto:e.kanja@alustudent.com) |
-| Eloi Iradukunda    | [e.kanja@alustudent.com](mailto:e.iradukunda@alustudent.com) |
+| Eloi Iradukunda    | [e.iradukunda@alustudent.com](mailto:e.iradukunda@alustudent.com) |
 
 ---
 
