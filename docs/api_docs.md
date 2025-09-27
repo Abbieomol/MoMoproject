@@ -19,7 +19,9 @@ If authentication fails, the server responds with:
 
 ### 1. Get All Transactions
 **Method & URL**  
-`GET /transactions`
+```bash
+GET /transactions
+```
 
 **Example curl**
 ```bash
