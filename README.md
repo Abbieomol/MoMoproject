@@ -11,8 +11,6 @@
 | Erick Kanja     | [e.kanja@alustudent.com](mailto:e.kanja@alustudent.com) |
 | Eloi Iradukunda | [e.iradukunda@alustudent.com](mailto:e.iradukunda@alustudent.com) |
 
----
-
 ## Project Description
 
 In this continuous formative assessment, our goal is to design and develop an enterprise-level fullstack application.  
@@ -24,21 +22,11 @@ The application will:
 - Store it in a relational database (SQLite or equivalent)
 - Provide a frontend interface to analyze and visualize the data  
 
-This project demonstrates backend data processing, database management, and frontend development skills.  
-
-For Week 1, the focus is on:
-
-- Setting up our team’s shared workspace
-- Defining our system architecture  
-- Organizing tasks using Agile practices  
-
----
+This project demonstrates backend data processing, database management, and frontend development skills.   
 
 ## Architecture Diagram
 
 https://drive.google.com/file/d/1cvtZDU9UQzNxUoj7_jDohMXb2KmhXQNw/view?usp=sharing
-
----
 
 ## Scrum Board
 
