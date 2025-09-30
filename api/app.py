@@ -9,10 +9,11 @@ USERNAME = "admin"
 PASSWORD = "password123"
 
 # Load transactions
-with open("parsed_sms_v2.json", "r") as f:
+with open("data/processed/dashboard.json", "r") as f:
     transactions = json.load(f)
+    
+next_id = max(int(t["id"]) for t in transactions) + 1 if transactions else 1
 
-next_id = max(t["id"] for t in transactions) + 1 if transactions else 1
 
 class RequestHandler(BaseHTTPRequestHandler):
     def _send_json(self, data, code=200):
