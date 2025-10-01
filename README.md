@@ -35,3 +35,7 @@ https://trello.com/b/6Fa0j91W/my-trello-board
 ## ERD Documentation
 
 https://docs.google.com/document/d/1epBmEhosZ_T7uk3mHBZHPyuHgbD6Xorco5bSBJiP82w/edit?usp=sharing
+
+## API DOCUMENTATION
+
+https://docs.google.com/document/d/15u4ZqsLn1rFYa5eoZBolG1M92726UZVqZzRTO9-_d5A/edit?usp=sharing  
