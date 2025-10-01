@@ -34,11 +34,13 @@ class RequestHandler(BaseHTTPRequestHandler):
         if not auth or not auth.startswith('Basic '):
             return False
         try:
-            encoded_credentials = auth.split(' ')[1]
-            decoded = base64.b64decode(encoded_credentials).decode('utf-8')
-            username, password = decoded.split(':')
-            return username == USERNAME and password == PASSWORD
-        except:
+            method, encoded = auth.split(" ")
+            if method != "Basic":
+                return False
+            decoded = base64.b64decode(encoded).decode()
+            user, pwd = decoded.split(":", 1)
+            return user == USERNAME and PASSWORD == PASSWORD
+        except Exception:
             return False
 
     def _parse_id(self, path):
