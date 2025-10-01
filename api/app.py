@@ -11,8 +11,8 @@ PASSWORD = "password123"
 # Load transactions
 with open("data/processed/dashboard.json", "r") as f:
     transactions = json.load(f)
-    
-next_id = max(int(t["id"]) for t in transactions) + 1 if transactions else 1
+
+next_id = str(max(int(t["id"]) for t in transactions) + 1 if transactions else 1)
 
 
 class RequestHandler(BaseHTTPRequestHandler):
@@ -57,7 +57,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         elif self.path.startswith("/transactions/"):
             tid = self._parse_id(self.path)
             for t in transactions:
-                if t["id"] == tid:
+                if int(t["id"]) == tid:
                     self._send_json(t)
                     return
             self._send_json({"error": "Transaction not found"}, code=404)
@@ -73,9 +73,11 @@ class RequestHandler(BaseHTTPRequestHandler):
             content_length = int(self.headers.get("Content-Length", 0))
             post_data = self.rfile.read(content_length)
             new_transaction = json.loads(post_data)
+
             global next_id
             new_transaction["id"] = next_id
-            next_id += 1
+            next_id = str(int(next_id) + 1)
+
             transactions.append(new_transaction)
             self._send_json(new_transaction, code=201)
         else:
@@ -91,7 +93,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             content_length = int(self.headers.get("Content-Length", 0))
             put_data = json.loads(self.rfile.read(content_length))
             for i, t in enumerate(transactions):
-                if t["id"] == tid:
+                if int(t["id"]) == tid:
                     transactions[i].update(put_data)
                     self._send_json(transactions[i])
                     return
@@ -107,7 +109,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         if self.path.startswith("/transactions/"):
             tid = self._parse_id(self.path)
             for i, t in enumerate(transactions):
-                if t["id"] == tid:
+                if int(t["id"]) == tid:
                     deleted = transactions.pop(i)
                     self._send_json(deleted)
                     return
